@@ -1,0 +1,60 @@
+body {
+  background: #222;
+  color: cyan;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Gap between items */
+}
+
+.button {
+  border: none;
+  background-color: #444;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 8px;
+  color: cyan;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #383838;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px; /* Gap between items */
+  background-color: #333;
+}
+
+/* Style the custom checkbox container */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  /* Hide the native checkbox input */
+  /* Style the label when the checkbox is not checked */
+  /* Style the label when the checkbox is checked */
+}
+.custom-checkbox input[type=radio] {
+  display: none;
+}
+.custom-checkbox input[type=radio] + .checkbox-label {
+  color: red;
+  border: 2px solid red;
+  background-color: #444;
+}
+.custom-checkbox input[type=radio]:checked + .checkbox-label {
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+.custom-checkbox:hover {
+  background-color: #383838;
+}
+
+/*# sourceMappingURL=style.css.map */

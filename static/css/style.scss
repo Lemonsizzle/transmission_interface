@@ -1,0 +1,68 @@
+@import "colors";
+
+body {
+  background: $main-bg;
+  color: $primary;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Gap between items */
+}
+
+.button {
+  border: none;
+  background-color: $inactive-bg;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 8px;
+  color: $primary;
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+}
+
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px; /* Gap between items */
+  background-color: $second-bg;
+}
+
+/* Style the custom checkbox container */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  /* Hide the native checkbox input */
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* Style the label when the checkbox is not checked */
+  input[type="radio"] + .checkbox-label {
+    color: $custom-unchecked;
+    border: 2px solid $custom-unchecked;
+    background-color: $inactive-bg;
+
+  }
+
+  /* Style the label when the checkbox is checked */
+  input[type="radio"]:checked + .checkbox-label {
+    color: $custom-checked;
+    border: 2px solid $custom-checked;
+  }
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+}

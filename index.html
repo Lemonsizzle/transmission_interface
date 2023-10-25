@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Torrenting Interface</title>
+    <script src="static/js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  </head>
+  <header>
+    <label>
+      <span>Magnet Link:</span>
+      <input id="magnet_input" type="text" />
+    </label>
+  </header>
+  <body>
+    <div id="container"></div>
+  </body>
+  <footer>
+    <button class="button" onclick="Download()">Download</button>
+  </footer>
+  <script>
+    Generate();
+  </script>
+</html>
